@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="ToDoList">
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Todo List</h1>
+      <div>
+        <div class= "menu">
+          <span id="addTodo"><img src="img/addIcon.png" alt="Add Icon" height="42" width="42"></span>
+          <span id="removeTodo"><img src="img/deleteIcon.png" alt="Delete Icon" height="42" width="42"></span>
+        </div>
+        <div id="formContainer" style="display: none">
+          <form id="addForm">
+            <label for="todoname">Todo Name:</label>
+            <input type="text" id="todoname" name="todo_name" value="" />
+            <label for="ownername">Owner Name: (Optional)</label>
+            <input type="text" id="ownername" name="owner_name" />
+            <label for="description">Description:</label>
+            <textarea id="description" name="todo_description"></textarea>
+            <button type="button" id="newTodo">ADD TODO</button>
+          </form>
+        </div>
+        <div class="todoList"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="list.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
